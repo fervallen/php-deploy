@@ -1,0 +1,27 @@
+{
+    "name": "fervallen/php-deploy",
+    "description": "PHP Deploy tool",
+    "type": "project",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "^2",
+        "yiisoft/yii2-bootstrap": "^2",
+        "yiisoft/yii2-swiftmailer": "^2"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "^2",
+        "yiisoft/yii2-gii": "^2",
+        "yiisoft/yii2-faker": "^2"
+    },
+    "config": {
+        "fxp-asset": {
+            "installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "process-timeout": 1800
+    },
+    "extra": {
+    }
+}

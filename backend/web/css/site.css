@@ -1,0 +1,230 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+
+.wrap > .container {
+  padding: 70px 15px 20px;
+}
+
+.footer {
+  height: 60px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.not-set {
+  color: #c55;
+  font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 5px;
+}
+
+a.asc:after {
+  content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+  content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+  content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+  content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+  content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+  content: "\e156";
+}
+
+.grid-view td {
+  white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+  min-width: 50px;
+}
+
+.hint-block {
+  display: block;
+  margin-top: 5px;
+  color: #999;
+}
+
+.error-summary {
+  color: #a94442;
+  background: #fdf7f7;
+  border-left: 3px solid #eed3d7;
+  padding: 10px 20px;
+  margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+  padding: 15px;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .nav li > form > button.logout {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 10px 15px;
+  }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+  text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+  outline: none;
+}
+
+.row-disabled {
+  opacity: 0.5;
+}
+
+.table-embed {
+  border: 1px #000 solid;
+  border-radius: 50%;
+  display: inline-block;
+  height: 22px;
+  margin: -6px 0;
+  width: 22px;
+}
+
+.m-r-s {
+  margin-right: 5px;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.unortodox-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.short-cut,
+.long-cut {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.long-cut {
+  max-width: 800px;
+}
+
+.short-cut {
+  max-width: 150px;
+}
+
+.cancel_reason {
+  white-space: normal !important;
+}
+
+form label {
+  margin-right: 20px;
+}
+
+.deploy-view h1 {
+  margin-left: 28px;
+  margin-top: -10px;
+}
+
+.deploy-view #header {
+  margin-top: 0;
+}
+
+.deploy-result {
+  background-color: #0f0f0f;
+  color: #bbb;
+  width: 100%;
+  height: 330px;
+}
+
+#deploy-progress {
+  background-color: #ffffff;
+  border: 2px #999 solid;
+  border-radius: 15px;
+  display: flex;
+  margin: 0 13px 13px;
+  padding: 15px;
+}
+
+#deploy-progress img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#deploy-progress h3 {
+  margin-top: 13px;
+}
+
+.deploy-info {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#branch-name,
+#deploy-user-name,
+#deploy-start-time{
+  font-weight: bold;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .btn-link {
+  color: #fff !important;
+}
+
+.environment-dev .navbar-inverse,
+.environment-stage .navbar-inverse {
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+.environment-prod .navbar-inverse {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}

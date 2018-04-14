@@ -2,7 +2,7 @@
 return [
     [
         'name' => 'Self',
-        'path' => __DIR__ . '/../../',
+        'path' => str_replace('/common/config', '', __DIR__),
         'commands' => [
             'default' => [
                 'composer install',
